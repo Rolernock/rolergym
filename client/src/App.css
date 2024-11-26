@@ -1,0 +1,113 @@
+body {
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.custom-underline {
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+.icon-large {
+  font-size: 7rem;
+}
+
+.fw-logo {
+  font-weight: 900;
+}
+
+.nav-bar-header .navbar-brand,
+.nav-bar-header .nav-link {
+  color: #fff !important;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  margin: 10px 30px;
+  padding: 0;
+  padding-bottom: 3px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link::after {
+  display: none;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active a::after,
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover a::after {
+  display: block;
+  background-color: #ff2953;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.slider_section {
+  color: #ffffff;
+}
+
+.slider_section .detail-box h1,
+.slider_section .detail-box h2,
+.slider_section .detail-box h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.slider_section .detail-box h2 {
+  font-size: 2.5rem;
+}
+
+.feature-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.my-large {
+  margin: 3rem 0;
+}
+
+.mb-large {
+  margin-bottom: 3rem;
+}
+
+.mt-large {
+  margin-top: 3rem;
+}
+
+.m-zero {
+  margin-top: -1rem;
+}
+
+@media (max-width: 768px) {
+  .m-zero {
+    margin-top: 1rem;
+  }
+}
