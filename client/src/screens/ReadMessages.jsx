@@ -18,9 +18,9 @@ export default function ReadMessages() {
   }, [])
   const handleDelete = async msgId => {
     await dispatch(deleteMessage(msgId))
+    handleCloseModal()
     dispatch(readMessages())
   }
-  console.log(messages.length)
 
   return (
     <>
